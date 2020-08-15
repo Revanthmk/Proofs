@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Play Music Lyrics Fetcher Options</title>
+    <style>
+		body {
+			font-family: "Roboto", sans-serif;
+			font-size: 100%;
+			background: #fff;
+			color: #888;
+			margin:10px 10px 0 10px;
+		}
+		footer{
+			text-align:center;
+			font-size:0.7em;
+		}
+		.footer-heading {
+			display: block;
+			margin-bottom: 5px;
+		}
+		footer a {
+			margin:5px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.settings_item{
+			margin:2px;
+		}
+		a>img{
+			-webkit-transition : -webkit-filter 200ms linear;
+		}
+		a>img:hover{
+			-webkit-filter: brightness(80%);
+		}
+		#links{
+			text-align:center;
+			margin-top:20px;
+		}
+		#links>a{
+			margin:5px;
+		}
+		#clear_cache_feedback{
+			opacity:0;
+			-webkit-transition: opacity 300ms linear;
+			transition: opacity 300ms linear;
+		}
+form{
+margin-top:10px;
+}
+fieldset{
+margin-top:10px;
+}
+    </style>
+</head>
+<body>
+
+	<p class="settings_item">
+		<input type="checkbox" id="timed_lyrics" name="timed_lyrics" value="Use timed lyrics">
+		<label for="timed_lyrics">Use timed lyrics</label>
+	</p>
+	<p class="settings_item">
+		<input type="checkbox" id="resize_external_window" name="resize_external_window" value="Resize external window">
+		<label for="resize_external_window">Resize external window</label>
+	</p>
+	<p style="font-size:.7em">HINT: You can use Alt+Shift+L (default) to open the lyrics</p>
+	<p id="links">
+		<a href="http://github.com/erichlotto/Play-Music-Lyrics-Fetcher" title="View source"><img border=0 src="../../images/github.png" alt="github" /></a>
+	</p>
+
+	<footer>
+		<label class="footer-heading">Play Music Lyrics Fetcher proudly relies on the following APIs.</label>
+		<a target=_blank href="http://www.vagalume.com.br/">
+			<img border=0 src="http://api.vagalume.com.br/images/fundo-claro/103-fundo-claro-transparente.png" alt="Vagalume" />
+		</a>
+		<a target=_blank href="http://www.darklyrics.com/">
+			<img border=0 src="http://www.darklyrics.com/dlogo.gif" alt="Dark Lyrics" style="background: #000; height: 34px; padding: 0 5px; border-radius: 4px;" />
+		</a>
+		<a target=_blank href="http://genius.com/">
+			<img border=0 src="genius.png" style="border-radius: 4px;" />
+		</a>
+	</footer>
+    <script src="/services/dependencies/jquery.min.js"></script>
+    <script src="./options.js"></script>
+</body>
+</html>
