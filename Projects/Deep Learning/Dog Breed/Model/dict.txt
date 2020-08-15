@@ -1,0 +1,10 @@
+Chihuahua
+Doberman
+German_shepherd
+Labrador_retriever
+Pomeranian
+Rottweiler
+boxer
+chow
+golden_retriever
+pug
