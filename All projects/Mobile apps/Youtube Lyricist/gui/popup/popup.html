@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700,400' rel='stylesheet' type='text/css'>
+    <link href='./style.css' rel='stylesheet' type='text/css'>
+    <script src="../../services/dependencies/jquery.min.js"></script>
+    <script src="../../services/utils.js"></script>
+    <script src="./ui.js"></script>
+    <script src="./logic.js"></script>
+</head>
+<body>
+
+<p id="status">...</p>
+
+<div id="info">
+    <div id="title">
+        <label id="track"></label><br>
+        <i>
+            <label>by</label>
+            <label id="artist"></label>
+        </i>
+    </div>
+    <div id="lyrics"></div>
+</div>
+
+<div id="tools">
+    <div id="search_panel">
+        <div id="bt_search" class="fab" title="Wrong track? Fix it here."><img src="./images/bt_search.png"></div
+        ><div id="search_fields">
+          <input type="text" id="input_artist" name="Artist" placeholder="Artist" tabindex="-1">
+            <input type="text" id="input_track" name="Track" placeholder="Track" tabindex="-1">
+        </div>
+    </div>
+</div>
+
+    <script src="./changelog.js"></script>
+
+</body>
+</html>
