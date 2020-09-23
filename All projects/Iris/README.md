@@ -6,7 +6,7 @@
 
 ## Requirements
   The code is in Python 3.7</br>
-  All the dependencies can be installed using requirement.txt
+  The requirements are mentioned on the Main.py file
 
 ## Abstract
   <p>According to the CDC motor vehicle safety division, one in five car accidents is caused by a distracted driver. This roughly translates to 425,000 people injured and 3,000 people killed by distracted driving every year.</p>
