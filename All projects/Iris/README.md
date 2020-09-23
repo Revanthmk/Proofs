@@ -12,7 +12,24 @@
   <p>According to the CDC motor vehicle safety division, one in five car accidents is caused by a distracted driver. This roughly translates to 425,000 people injured and 3,000 people killed by distracted driving every year.</p>
   <p>We created an system which can identify and send an alert if the driver is engaged in any other activity (among the 10 activities recorded in the dataset).</p>
   
-## The model Architecture
+## Data Set
+  Data is obtained from Kaggle “[State Farm Distracted Driver Detection](https://www.kaggle.com/c/state-farm-distracted-driver-detection/data)”, and contains images of people involved in one of these 9 types of distractions. The volunteers are chosen from different race and ethnicity, to make the model created with this dataset much more robust. The train and test data are split on the drivers, such that one driver can only appear either train or test set.</br>
+### Classes
+  <ul>
+  <li>Safe Driving</li>
+  <li>Texting - Right</li>
+  <li>Texting - Left</li>
+  <li>Talking on phone - Right</li>
+  <li>Talking on phone - Left</li>
+  <li>Operating the radio</li>
+  <li>Drinking</li>
+  <li>Reaching behind</li>
+  <li>Hair and Makeup</li>
+  <li>Talking to passenger</li>
+  </ul>
+  
+  
+## The Architecture
   We tried 3 different architectures,
   <ul>
   <li>A Vanilla CNN</li>
@@ -48,6 +65,11 @@
    
    
    
+
+
+
+
+
 
 
 
