@@ -29,7 +29,7 @@
   </ul>
   
   
-## The Architecture
+## The Architectures
   We tried 3 different architectures,
   <ul>
   <li>A Vanilla CNN</li>
