@@ -26,7 +26,28 @@
    RMS Prop is used as the optimizer with Categorical cross entropy as the loss function.</br>
    The validation accuracy for this model was 91% which is really good but the model didn't perform good enough for any input which didn't resemble the original dataset
   <img src='https://github.com/Revanthmk/Proofs/blob/master/Pictures%20proof/Driver%20Distraction/CNN%20visu.PNG'>
-
+  
+  ### AlexNet
+   This is using the architecutre AlexNet (Not using a pretrained model).
+   The data is resized to 32x32 and sent in batches of 100 with default learning rate of 0.001 as recommended in the AlexNet research paper
+   The loss function used was Categorical Crossentropy with Adam optimizer
+   The only change made in the architecture was in the outputlayer, changing it from 1000 nodes to 10 nodes to fit the use case. More changes can be mode to make the architecture more efficient for this specific dataset but I'm not experienced enough to make changes in any architectures yet.
+   The model didn't do as accurate as the previous model with 87% on validation set but did significantly better for rela life input cases, which shows that the model which we previously used was overfitted.
+   <img src='https://github.com/Revanthmk/Proofs/blob/master/Pictures%20proof/Driver%20Distraction/AlexNet.png'>
+   
+  ### VGG16
+   This is not using the architecture VGG16 but the pretrained model on ImageNet.
+   Every layer except the last 2 were frozen because those contains complex features extracted from the input image.
+   Added 2 dense layers with 1000 nodes each and an output layer with 10 nodes.
+   We choose VGG16 over VGG19 the model is deployed on a remote device with very limited processing power, and VGG16 is almost as good as VGG19 which isn't worth the extra processing power required.\
+   The loss function used was Categorical Crossentropy with RMSprop as the oprimizer.
+   The model had accuracy of 78% which shows that it avoided the overfitting problem with our Vanilla CNN model but AlexNet had a better accuracy so we decided to go with that model.
+   The low accuracy of the model might be because of the pretrained weight which was vastly different from our dataset
+   <img src='https://github.com/Revanthmk/Proofs/blob/master/Pictures%20proof/Driver%20Distraction/VGG16.PNG'>
+   
+   
+   
+   
 
 
 
